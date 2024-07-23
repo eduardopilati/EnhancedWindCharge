@@ -1,0 +1,6 @@
+name: EnhancedWindCharge
+version: '1.0'
+main: dev.pilati.enhancedwindcharge.EnhancedWindCharge
+api-version: '1.21'
+authors: [Pilati]
+description: Full control of Wind Charge
