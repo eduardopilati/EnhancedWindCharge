@@ -10,6 +10,18 @@ Para usar o plugin deve-se digitar o comando `/windcharge` no console do servido
 
 * Ao digitar o comando irão ser exibidos todos os parâmetros que podem ser configurados. Sendo obrigatório apenas o(s) jogador(es) que receberão o item
 
+### Parâmetros Configuráveis
+
+- Jogador
+- Quantidade de Cargas que o jogador irá receber
+- Velocidade do Projétil
+- Força da Explosão (Knockback)
+- Raio da Explosão
+- Mostrar Partículas
+    - Tipo de Partículas
+    - Quantidade de Partículas por tick
+    - Intervalo em ticks entre Partículas
+
 ## Como Instalar:
 
 Para instalar deve-se colocar o plugin compilado ou baixado de [Releases](https://github.com/eduardopilati/EnhancedWindCharge/releases) na pasta `plugins` do servidor
