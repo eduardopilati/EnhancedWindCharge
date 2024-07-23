@@ -2,5 +2,59 @@ name: EnhancedWindCharge
 version: '1.0'
 main: dev.pilati.enhancedwindcharge.EnhancedWindCharge
 api-version: '1.21'
-authors: [Pilati]
+authors: [ Pilati ]
 description: Full control of Wind Charge
+commands:
+  windcharge:
+    description: Wind Charge command
+    usage: /windcharge <strength> <velocity> [showParticles]
+    permission: enhancedwindcharge.windcharge
+permissions:
+  enhancedwindcharge.use:
+    description: Permission to use EnhancedWindCharge
+    default: true
+  enhancedwindcharge.windcharge:
+    description: Permission to use the Wind Charge command
+    default: op
+  enhancedwindcharge.windcharge.amount:
+    description: Permission to set the amount of Wind Charges
+    default: op
+  enhancedwindcharge.windcharge.strength:
+    description: Permission to set the strength of the Wind Charge
+    default: op
+  enhancedwindcharge.windcharge.speed:
+    description: Permission to set the speed of the Wind Charge
+    default: op
+  enhancedwindcharge.windcharge.radius:
+    description: Permission to set the radius of the Wind Charge Explosion
+    default: op
+  enhancedwindcharge.windcharge.showParticles:
+    description: Permission to show particles when using Wind Charge
+    default: op
+  enhancedwindcharge.windcharge.particleType:
+    description: Permission to set the type of particles when using Wind Charge
+    default: op
+  enhancedwindcharge.windcharge.particleAmount:
+    description: Permission to set the amount of particles when using Wind Charge
+    default: op
+  enhancedwindcharge.windcharge.particleInterval:
+    description: Permission to set the interval between particles when using Wind Charge
+    default: op
+  enhancedwindcharge.windcharge.*:
+    description: Permission to use all Wind Charge features
+    default: op
+    children:
+      enhancedwindcharge.windcharge: true
+      enhancedwindcharge.windcharge.strength: true
+      enhancedwindcharge.windcharge.speed: true
+      enhancedwindcharge.windcharge.radius: true
+      enhancedwindcharge.windcharge.showParticles: true
+      enhancedwindcharge.windcharge.particleType: true
+      enhancedwindcharge.windcharge.particleAmount: true
+      enhancedwindcharge.windcharge.particleInterval: true
+  enhancedwindcharge.*:
+    description: Permission to use all EnhancedWindCharge features
+    default: op
+    children:
+      enhancedwindcharge.use: true
+      enhancedwindcharge.windcharge.*: true

@@ -1,0 +1,21 @@
+
+
+messages:
+  prefix: "&7[&6EnhancedWindCharge&7] &r"
+  command:
+    usage: "&cUso: &6%usage%"
+    parameter:
+      target: "Jogador"
+      amount: "Quantidade de Cargas"
+      speed: "Velocidade do Projétil"
+      strength: "Força da Explosão"
+      radius: "Raio da Explosão"
+      showParticles: "Mostrar Partículas"
+      particleType: "Tipo de Partículas"
+      particleAmount: "Quantidade de Partículas por tick"
+      particleInterval: "Intervalo em ticks entre Partículas"
+    error:
+      noTargetFound: "&cNão foi possível encontrar o jogador &6%target%&c."
+      noPermission: "&cVocê não tem a permissão %permission% para usar este comando."
+  item:
+    noUsePermission: "&cVocê não tem permissão para usar este item."
